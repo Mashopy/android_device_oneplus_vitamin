@@ -36,11 +36,7 @@ PRODUCT_PACKAGES += \
     update_verifier
 
 # Audio
-SOONG_CONFIG_NAMESPACES += android_hardware_audio
-SOONG_CONFIG_android_hardware_audio += \
-	run_64bit
-
-SOONG_CONFIG_android_hardware_audio_run_64bit := true
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
