@@ -183,6 +183,7 @@ PRODUCT_PACKAGES += \
     init.cgroup.rc \
     init.mt6983.rc \
     init.mt6983.usb.rc \
+    init.oplus.rc \
     init.project.rc \
     init.recovery.mt6983.rc \
     task_profiles.mgvi.json \
