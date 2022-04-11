@@ -188,6 +188,7 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6983.rc \
     task_profiles.mgvi.json \
     ueventd.mt6983.rc \
+    ueventd.oplus.rc \
     swap_enable.sh
 
 # IMS

@@ -61,6 +61,13 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "ueventd.oplus.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.oplus.rc",
+    device_specific: true,
+}
+
 sh_binary {
     name: "swap_enable.sh",
     src: "swap_enable.sh",
