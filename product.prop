@@ -1,0 +1,30 @@
+# Audio
+ro.config.vc_call_vol_steps=9
+
+# Bluetooth
+persist.bluetooth.a2dp_aac_abr.enable=true
+persist.bluetooth.disableabsvol=false
+persist.bluetooth.disableinbandringing=false
+
+# Display
+persist.sys.sf.color_saturation=1.0
+persist.vendor.sys.pq.disp.ccorr.silky.brightness=1
+
+# GPS
+ro.oplus.mtk_gps_mpe=1
+
+# Radio
+persist.sys.oplus.radio.mtk_sa_e5gopt_option = 2
+persist.vendor.entitlement_enabled=1
+ro.oplus.connectivity.oversea=true
+ro.oplus.radio.dual_nr_enabled=true
+ro.oplus.radio.dual_nr_toggle_enabled=false
+ro.oplus.radio.evdo_oos_interval=45000
+ro.oplus.radio.gsm_oos_interval=48000
+ro.oplus.radio.lte_oos_interval=72000
+ro.oplus.radio.lte_rsrp_thresholds=-126,-121,-114,-105,-44
+ro.oplus.radio.modem_reset_time=20
+ro.oplus.radio.osl=1
+ro.oplus.radio.sub_slot_support_sa=0
+ro.vendor.mtk_md3_support=0
+ro.vendor.mtk_mobile_management=0
