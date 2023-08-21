@@ -1,7 +1,36 @@
 prebuilt_etc {
     name: "fstab.mt6983",
     src: "fstab.mt6983",
+    vendor: true,
     vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "init.cgroup.rc",
+    src: "init.cgroup.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6983.rc",
+    src: "init.mt6983.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.mt6983.usb.rc",
+    src: "init.mt6983.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.project.rc",
+    src: "init.project.rc",
+    sub_dir: "init/hw",
+    vendor: true,
 }
 
 prebuilt_etc {
@@ -9,4 +38,24 @@ prebuilt_etc {
     src: "init.recovery.mt6983.rc",
     sub_dir: "init",
     recovery: true,
+}
+
+prebuilt_etc {
+    name: "task_profiles.mgvi.json",
+    filename "task_profiles.json",
+    src: "task_profiles.mgvi.json",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.mt6983.rc",
+    filename "ueventd.rc",
+    src: "ueventd.mt6983.rc",
+    vendor: true,
+}
+
+sh_binary {
+    name: "swap_enable.sh",
+    src: "swap_enable.sh",
+    vendor: true,
 }

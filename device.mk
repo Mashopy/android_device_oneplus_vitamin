@@ -59,8 +59,16 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.mt6983 \
     fstab.mt6983.vendor_ramdisk \
-    init.recovery.mt6983.rc
+    init.cgroup.rc \
+    init.mt6983.rc \
+    init.mt6983.usb.rc \
+    init.project.rc \
+    init.recovery.mt6983.rc \
+    task_profiles.mgvi.json \
+    ueventd.mt6983.rc \
+    swap_enable.sh
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
