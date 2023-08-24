@@ -99,6 +99,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ACCDET.kl
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlay \
+    TetheringConfigOverlay \
+    WifiResOverlay
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
