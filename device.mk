@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
     ueventd.mt6983.rc \
     swap_enable.sh
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/ACCDET.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ACCDET.kl
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
