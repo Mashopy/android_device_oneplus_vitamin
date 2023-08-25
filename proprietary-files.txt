@@ -435,8 +435,6 @@ odm/firmware/tfa98xx.cnt
 vendor/bin/autobt
 vendor/etc/init/init.bt_drv.rc
 vendor/firmware/BT_FW.cfg
-vendor/firmware/BT_FW_22021.cfg
-vendor/firmware/BT_FW_22221.cfg
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
