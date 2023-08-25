@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.graphics.allocator@2.0.vendor \
     android.hardware.graphics.allocator@3.0.vendor \
-    android.hardware.graphics.allocator@4.0.vendor
+    android.hardware.graphics.allocator@4.0.vendor \
+    android.hardware.graphics.composer@2.3-service
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.faketouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.faketouch.xml \
