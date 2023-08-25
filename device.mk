@@ -263,6 +263,8 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlay \
+    SettingsProviderResOverlayAce2V \
+    SettingsProviderResOverlayNord3 \
     TetheringConfigOverlay \
     WifiResOverlay
 
