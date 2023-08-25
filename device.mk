@@ -83,3 +83,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 30 31
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/oneplus/vitamin/vitamin-vendor.mk)
