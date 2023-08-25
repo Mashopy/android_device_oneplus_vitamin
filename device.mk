@@ -261,6 +261,7 @@ PRODUCT_PACKAGES += \
     FrameworksResOverlay \
     SettingsProviderResOverlayAce2V \
     SettingsProviderResOverlayNord3 \
+    SystemUIResOverlay \
     TetheringConfigOverlay \
     WifiResOverlay
 
