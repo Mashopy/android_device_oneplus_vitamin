@@ -4,6 +4,10 @@
     "target_path": "hardware/mediatek"
   },
   {
+    "repository": "android_hardware_oplus",
+    "target_path": "hardware/oplus"
+  },
+  {
     "repository": "android_kernel_oneplus_mt6983",
     "target_path": "kernel/oneplus/mt6983"
   }
