@@ -113,10 +113,6 @@ ro.hardware.egl=meow
 # Incremental FS
 ro.incremental.enable=yes
 
-# Init
-ro.vendor.init.sensor.rc=init.sensor_2_0.rc
-ro.vendor.rc=/vendor/etc/init/hw/
-
 # Kernel
 ro.vendor.mgk_name=mgk_64_k510
 
