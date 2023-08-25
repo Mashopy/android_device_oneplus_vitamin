@@ -22,19 +22,6 @@
         <library name="loudness_enhancer" path="libldnhncr.so"/>
         <library name="dynamics_processing" path="libdynproc.so"/>
         <library name="pre_processing" path="libaudiopreprocessing_mtk.so"/>
-        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-        <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
-        <library name="dap" path="libswdap_sp.so"/>
-        <library name="dvl" path="libdlbvol_sp.so"/>
-
-        <!--DOLBY END-->
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME-->
-        <!-- Liang.Xu@MULTIMEDIA.AUDIOSERVER.EFFECT, 2021/12/01, Add for dolby atmos game -->
-        <library name="gamedap" path="libswgamedap_sp.so"/>
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME END-->
-        <!-- #endif OPLUS_FEATURE_DOLBY -->
-
-        <!-- OPLUS_FEATURE_SPATIALIZER END -->
     </libraries>
 
     <!-- list of effects to load.
@@ -75,40 +62,7 @@
         <effect name="aec" library="pre_processing" uuid="9f35ed76-0b66-4330-8f79-e39ca266dc7c"/>
         <effect name="ns" library="pre_processing" uuid="300abe9f-dfc5-4340-9c4b-79ef1be4e651"/>
         <effect name="agc" library="pre_processing" uuid="3387eb70-9896-4338-90f5-b2de883864c9"/>
-        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-        <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
-        <effect name="dap" library="dap" uuid="9d4921da-8225-4f29-aefa-39537a04bcaa"/>
-        <effect name="dlb_music_listener" library="dvl" uuid="40f66c8b-5aa5-4345-8919-53ec431aaa98"/>
-        <effect name="dlb_ring_listener" library="dvl" uuid="21d14087-558a-4f21-94a9-5002dce64bce"/>
-        <effect name="dlb_alarm_listener" library="dvl" uuid="6aff229c-30c6-4cc8-9957-dbfe5c1bd7f6"/>
-        <effect name="dlb_system_listener" library="dvl" uuid="874db4d8-051d-4b7b-bd95-a3bebc837e9e"/>
-        <effect name="dlb_notification_listener" library="dvl" uuid="1f0091e3-6ad8-40fe-9b09-5948f9a26e7e"/>
-
-        <!--DOLBY END-->
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME-->
-        <!-- Liang.Xu@MULTIMEDIA.AUDIOSERVER.EFFECT, 2021/12/01, Add for dolby atmos game -->
-        <effect name="gamedap" library="gamedap" uuid="3783c334-d3a0-4d13-874f-0032e5fb80e2"/>
-        <!--OPLUS_FEATURE_DOLBY_ATMOS_GAME END-->
-        <!-- #endif OPLUS_FEATURE_DOLBY -->
-
     </effects>
-        <!-- #ifdef OPLUS_FEATURE_DOLBY -->
-        <!-- Yaojin@MULTIMEDIA.AUDIOSERVER.EFFECT, 2022/07/19, add for dolby 3.7 after-->
-        <postprocess>
-            <stream type="music">
-                <apply effect="dlb_music_listener"/>
-            </stream>
-            <stream type="ring">
-                <apply effect="dlb_ring_listener"/>
-            </stream>
-            <stream type="alarm">
-                <apply effect="dlb_alarm_listener"/>
-            </stream>
-            <stream type="notification">
-                <apply effect="dlb_notification_listener"/>
-            </stream>
-        </postprocess>
-        <!-- #endif OPLUS_FEATURE_DOLBY -->
 
     <!-- Audio pre processor configurations.
          The pre processor configuration is described in a "preprocess" element and consists in a
@@ -148,4 +102,5 @@
             </stream>
         </postprocess>
     -->
+
 </audio_effects_conf>
