@@ -16,3 +16,6 @@ on boot
 on property:ro.boot.prjname=*
     # Display
     setprop ro.separate.soft ${ro.boot.prjname}
+
+    # Radio
+    setprop ro.product.hw ${ro.boot.prjname}
