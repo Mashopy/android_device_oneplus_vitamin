@@ -153,6 +153,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Fingerprint
+$(call soong_config_set,OPLUS_FINGERPRINT,USE_DIMLAYER_BL_EN,true)
+
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
