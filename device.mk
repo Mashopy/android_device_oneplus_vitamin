@@ -35,6 +35,11 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Alert slider
+PRODUCT_PACKAGES += \
+    KeyHandler \
+    tri-state-key-calibrate
+
 # Audio
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
@@ -264,6 +269,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
     FrameworksResOverlay \
     SettingsProviderResOverlayAce2V \
