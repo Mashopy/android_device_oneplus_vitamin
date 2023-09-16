@@ -49,14 +49,14 @@ prebuilt_etc {
 
 prebuilt_etc {
     name: "task_profiles.mgvi.json",
-    filename "task_profiles.json",
+    filename: "task_profiles.json",
     src: "task_profiles.mgvi.json",
     vendor: true,
 }
 
 prebuilt_etc {
     name: "ueventd.mt6983.rc",
-    filename "ueventd.rc",
+    filename: "ueventd.rc",
     src: "ueventd.mt6983.rc",
     vendor: true,
 }
