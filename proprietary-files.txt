@@ -1664,30 +1664,6 @@ vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
 vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
 vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
 
-# DMC
-vendor/bin/dmc_core
-vendor/bin/md_monitor
-vendor/bin/md_monitor_ctrl
-vendor/bin/mtk_pkm_service
-vendor/etc/init/dmc_core.rc
-vendor/etc/init/md_monitor.rc
-vendor/etc/init/mtk_pkm_service.rc
-vendor/lib64/libapmonitor_vendor.so
-vendor/lib64/libasn1c_core.so
-vendor/lib64/libasn1c_mapi.so
-vendor/lib64/libasn1c_mdmi.so
-vendor/lib64/libdecrypt.so
-vendor/lib64/libicd_decoder.so
-vendor/lib64/libpkm.so
-vendor/lib64/libtranslator_mapi_v3.0.so
-vendor/lib64/libtranslator_mdmi_v2.8.2.so
-vendor/lib64/libtranslator_utils.so
-vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
-vendor/lib64/vendor.mediatek.hardware.dmc@1.0.so
-vendor/lib64/vendor.mediatek.hardware.dmc@1.1.so
-vendor/lib64/vendor.mediatek.hardware.dmc@1.2.so
-vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
-
 # Eara IO
 vendor/bin/eara_io_service
 vendor/etc/init/eara-io-service.rc

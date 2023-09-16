@@ -213,16 +213,6 @@
         <fqname>@1.1::IAee/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.apmonitor</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IApmService</name>
-            <instance>apm_hidl_service</instance>
-        </interface>
-        <fqname>@2.0::IApmService/apm_hidl_service</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -283,16 +273,6 @@
         <fqname>@1.0::IComposerExt/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.mediatek.hardware.dmc</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IDmcService</name>
-            <instance>dmc_hidl_service</instance>
-        </interface>
-        <fqname>@1.2::IDmcService/dmc_hidl_service</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.mediatek.hardware.engineermode</name>
         <transport>hwbinder</transport>
         <version>1.3</version>
@@ -329,16 +309,6 @@
         <fqname>@1.0::ILog/LoggerHidlServer</fqname>
         <fqname>@1.0::ILog/MobileLogHidlServer</fqname>
         <fqname>@1.0::ILog/ModemLogHidlServer</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.mdmonitor</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMDMonitorService</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMDMonitorService/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mmagent</name>
